@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+    {% load static %}
+    <link href="{% static '/about.css' %}" rel="stylesheet">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Zilla+Slab&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link href="{% static 'css/all.css' %}" rel="stylesheet"> <!--load all styles -->
+        <script defer src="{% static 'js/all.js' %}"></script> <!--load all styles -->
+
+
+
+
+    <title>About</title>
+</head>
+
+<body>
+
+    <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-0 fixed-top">
+        <a href="#" class="navbar-brand">रajwrita</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navLinks">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="/about/" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/meraki/" class="nav-link">Meraki</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/blogs/" class="nav-link">Blogs</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/contacts/" class="nav-link">Coffee?</a>
+                </li>
+            </ul>
+        </div>
+    </nav>  
+
+    <section id="header" class="jumbottron text-center">
+        <br><br><br><br><br><br><br><br><br><br>
+        <h1 class="display-3">     </h1>
+        <br>
+        <h4>   .   </h2>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </section>
+
+    <!--main section of about-->
+
+
+   
+
+
+ <!-- Site footer -->
+ <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h5>रajwrita</h5>
+          <p>Thanks for scrolling down till here! Connect with me on any of my social media platforms :D</p>
+        </div>
+
+
+      </div>
+      <hr>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Copyright &copy; Rajwrita.
+       
+          </p>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+            <li><a class="youtube" href="https://www.youtube.com/channel/UCWjL013dVJXYaJ20rpVakYQ?view_as=subscriber"><i class="fab fa-youtube"></i></a></li>
+            <li><a class="medium" href="https://medium.com/@rajwritanath"><i class="fab fa-medium-m"></i></a></li>
+            <li><a class="facebook" href="https://www.facebook.com/rajwrita"><i class="fab fa-facebook"></i></a></li>
+            <li><a class="twitter" href="https://twitter.com/rajwrita"><i class="fab fa-twitter"></i></a></li>
+            <li><a class="dribbble" href="https://www.instagram.com/rajwrita/"><i class="fab fa-instagram"></i></a></li>
+            <li><a class="facebook" href="https://www.linkedin.com/in/rajwrita-nath/"><i class="fab fa-linkedin-in"></i></a></li>   
+          </ul>
+        </div>
+      </div>
+    </div>
+</footer>
+
+
+
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+
+
+
+
+    <script>
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $("#mainNavbar");
+                $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
+</body>
+
+</html>

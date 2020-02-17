@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="Cache-control" content="no-cache">
+
+    {% load static %}
+    <link href="{% static '/contact.css' %}" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Zilla+Slab&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Custom CSS -->
+    <link href="{% static 'css/all.css' %}" rel="stylesheet"> <!--load all styles -->
+    <script defer src="{% static 'js/all.js' %}"></script> <!--load all styles -->
+
+
+
+
+    <title>Contacts</title>
+</head>
+
+<body>
+    <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-0 fixed-top">
+        <a href="#" class="navbar-brand">रajwrita</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navLinks">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="/about/" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/meraki/" class="nav-link">Meraki</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/blogs/" class="nav-link">Blogs</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/contacts/" class="nav-link">Coffee?</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="header" class="jumbottron text-center">
+        <br><br><br><br><br><br><br><br><br><br>
+        <h1 class="display-3">     </h1>
+        <br>
+        <h4>   .   </h2>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </section>
+
+<!-- contact block-->
+
+<section id="contact">
+  
+    <h1 class="section-header">CONTACT</h1>
+    
+    <div class="contact-wrapper">
+      
+        <!---------------- 
+  
+        CONTACT PAGE LEFT 
+      
+        -----------------> 
+      
+      <form class="form-horizontal" role="form" method="post" action="">
+          {% csrf_token %}
+        <br>
+
+        <div class="form-group">
+            <div class="col-sm-12">
+              <p class=contacttext>Would you want to go on a coffee date with me? Drop in your name and e-mail and I'll get back to you;)</p>
+            </div>
+          </div>
+          <br>
+         
+        <div class="form-group">
+          <div class="col-sm-12">
+            <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="">
+          </div>
+        </div>
+  
+        <div class="form-group">
+          <div class="col-sm-12">
+            <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="">
+          </div>
+        </div>
+  
+        
+        
+        <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+          <div class="button">
+            <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+          </div>
+        
+        </button>
+        
+      </form>
+      
+        <!---------------- 
+  
+        CONTACT PAGE RIGHT 
+      
+        -----------------> 
+      
+        <div class="direct-contact-container">
+  
+          <ul class="contact-list">
+            <li class="list-item"><i class="fas fa-map-marker-alt"></i><span class="contact-text place">Kolkata | India</span></li>
+            <li class="list-item"><i class="fas fa-phone-alt"></i><span class="contact-text phone"><a href="tel:1-212-555-5555" title="Give me a call">9836283445</a></span></li>
+            <li class="list-item"><i class="fas fa-envelope"></i><span class="contact-text gmail"><a href="mailto:rajwritanath@gmail.com" title="Send me an email">rajwritanath@gmail.com</a></span></li>
+          </ul>
+  
+          <hr>
+          <ul class="social-media-list">
+            <li><a href="#" target="_blank" class="contact-icon">
+              <i class="fab fa-github" aria-hidden="true"></i></a>
+            </li>
+            <li><a href="#" target="_blank" class="contact-icon">
+              <i class="fab fa-twitter" aria-hidden="true"></i></a>
+            </li>
+            <li><a href="#" target="_blank" class="contact-icon">
+              <i class="fab fa-instagram" aria-hidden="true"></i></a>
+            </li>
+            <li><a href="#" target="_blank" class="contact-icon">
+              <i class="fab fa-facebook" aria-hidden="true"></i></a>
+            </li>
+          </ul>
+
+          <hr>
+          
+  
+          <div class="copyright">&copy; रajwrita</div>
+  
+        </div>
+      
+    </div>
+    
+  </section>  
+    
+  <!--contact block end-->  
+
+
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <script>
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $("#mainNavbar");
+                $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
+</body>
+
+</html>
